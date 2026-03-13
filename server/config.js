@@ -5,7 +5,7 @@ module.exports = {
       name: "个人博客v2",
       description:
         "用于测试AI全自动开发上限的demo博客，由开发者提需求，AI主导开发流程。",
-      url: "http://zhengsongrui.life/blog-v2",
+      url: "http://zhengsongrui.life/frp/blog-v2",
       github: "https://github.com/zhengsongrui/blog-ts-v2",
       writeStatus: "维护中",
     },
@@ -14,8 +14,8 @@ module.exports = {
       name: "个人博客v3",
       description:
         "用当前主流AI开发流程开发的博客，由开发者制定架构、规范和规则，AI辅助实现。",
-      url: "http://zhengsongrui.life/blog-v3",
-      github: "https://github.com/zhengsongrui/frp/blog-v3",
+      url: "http://zhengsongrui.life/frp/blog-v3",
+      github: "https://github.com/zhengsongrui/blog-ts-v3",
       writeStatus: "未开发",
     },
     {
