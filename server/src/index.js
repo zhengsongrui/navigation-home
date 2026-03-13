@@ -8,7 +8,7 @@ const projectsRouter = require('../routes/projects');
 
 // 创建 Express 应用
 const app = express();
-const PORT = 3081;
+const PORT = process.env.PORT || 3081;
 
 // 中间件配置
 app.use(cors({
@@ -20,19 +20,19 @@ app.use(cors({
 app.use(express.json()); // 解析 JSON 请求体
 app.use(express.urlencoded({ extended: true })); // 解析 URL 编码请求体
 
+// 静态文件服务 - 优先于 API 路由
+app.use(express.static(path.join(__dirname, '../public')));
+
 // 注册路由
 app.use('/health', healthRouter);
 app.use('/api/projects', projectsRouter);
 
-// 404 处理
-app.use((req, res) => {
-  res.status(404).json({
-    error: '未找到资源',
-    path: req.path,
-    method: req.method
-  });
+// 对于任何未匹配的请求，返回前端应用（支持前端路由）
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
+// 404 处理（现在由前端路由处理）
 // 错误处理中间件
 app.use((err, req, res, next) => {
   console.error('服务器错误:', err);
@@ -45,11 +45,7 @@ app.use((err, req, res, next) => {
 // 启动服务器
 app.listen(PORT, () => {
   console.log(`🚀 服务器运行在 http://localhost:${PORT}`);
-  console.log(`📊 健康检查: http://localhost:${PORT}/health`);
-  console.log(`🌐 API 文档:`);
-  console.log(`   - 导航数据: http://localhost:${PORT}/api/navigation`);
-  console.log(`   - 项目信息（含服务状态检查）: http://localhost:${PORT}/api/projects`);
-  console.log(`📡 服务状态检查已集成到项目信息接口中`);
+  console.log(`📁 静态文件服务目录: ${path.join(__dirname, '../public')}`);
 });
 
 module.exports = app;

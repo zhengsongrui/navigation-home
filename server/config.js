@@ -6,7 +6,7 @@ module.exports = {
       description:
         "用于测试AI全自动开发上限的demo博客，由开发者提需求，AI主导开发流程。",
       url: "http://zhengsongrui.life/blog-v2",
-      github: "https://github.com/zhengsongrui/frp/blog-v2",
+      github: "https://github.com/zhengsongrui/blog-ts-v2",
       writeStatus: "维护中",
     },
     {

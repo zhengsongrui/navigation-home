@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ../build-simple.js",
+    "build:frontend": "cd ../frontend && npm run build",
+    "build:copy": "node ../build-simple.js --copy-only",
+    "start:prod": "npm run build && npm start"
   },
   "keywords": [
     "express",
