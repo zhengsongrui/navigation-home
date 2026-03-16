@@ -6,9 +6,9 @@
 import { ApiResponse } from '../types/ApiInterface';
 
 // 获取环境变量
-const ENV = process.env.REACT_APP_ENV || 'development';
-const DEBUG = process.env.REACT_APP_DEBUG === 'true';
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3082/api';
+const ENV = import.meta.env.REACT_APP_ENV || 'development';
+const DEBUG = import.meta.env.REACT_APP_DEBUG === 'true';
+const API_BASE_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:3082/api';
 
 // 环境配置对象
 export const envConfig = {

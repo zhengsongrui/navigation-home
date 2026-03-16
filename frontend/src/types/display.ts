@@ -34,7 +34,7 @@ export interface DisplayProject {
   id: number;
   name: string;
   description: string;
-  url: string;
+  url?: string;
   github:string;
   writeStatus: string;
   online?: boolean;
