@@ -7,6 +7,7 @@ import BackgroundElements from './components/effects/BackgroundElements';
 import Header from './components/layout/Header';
 import MainContent from './components/layout/MainContent';
 import './App.less';
+import Helper from './components/helper/Helper';
 
 function App() {
   const [activeProject, setActiveProject] = useState<number | null>(null);
@@ -60,6 +61,7 @@ function App() {
       <BackgroundElements />
 
       <div className="container">
+        <Helper />
         <Header />
         <MainContent
           projects={projects}

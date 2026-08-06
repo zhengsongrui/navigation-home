@@ -44,9 +44,9 @@ module.exports = {
 
     {
       id: 6,
-      name: "个人博客v3",
+      name: "AI博客",
       description:
-        "用当前主流AI开发流程开发的博客，由开发者制定架构、规范和规则，AI辅助实现。",
+        "AI驱动的个人博客，有AI自动生成文章摘要，AI 搜索，AI 标签生成，AI 问答等功能。",
       writeStatus: "未开发",
     },
   ],

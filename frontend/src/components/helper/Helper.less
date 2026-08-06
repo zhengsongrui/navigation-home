@@ -1,0 +1,81 @@
+.helper-view {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+  .helper-icon-view {
+    cursor: pointer;
+    width: 96px;
+    height: 96px;
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  .helper-say-view {
+    position: absolute;
+    max-width: 350px;
+    min-width: 180px;
+    width: max-content;
+    top: 40px;
+    right: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+  }
+  // 对话框
+  .helper-dialog-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .helper-dialog {
+    width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  .helper-dialog-textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 14px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    &:focus {
+      border-color: #667eea;
+    }
+  }
+  .helper-dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    gap: 8px;
+  }
+  .helper-dialog-btn {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    &.cancel {
+      background: #eee;
+      color: #333;
+    }
+    &.send {
+      background: #667eea;
+      color: #fff;
+    }
+  }
+}
