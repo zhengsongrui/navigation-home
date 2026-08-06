@@ -8,7 +8,7 @@ const projectsRouter = require('../routes/projects');
 
 // 创建 Express 应用
 const app = express();
-const PORT = process.env.PORT || 3081;
+const PORT = process.env.PORT || 80;
 
 // 中间件配置
 app.use(cors({
