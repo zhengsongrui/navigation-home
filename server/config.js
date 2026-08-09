@@ -1,52 +1,81 @@
 module.exports = {
   projects: [
-
     {
       id: 1,
+      name: "AI语音Agent后端v1",
+      description:
+        "基于 Node.js 开发的基础语音 AI Agent 后端，支持接入本地或线上 API，现已实现文本对话、语音输出及文字转语音等功能。",
+      url: "http://live2d.zhengsongrui.life/",
+      github:
+        "https://github.com/zhengsongrui/live2dAssistant/tree/main/live2dNode",
+      writeStatus: "已完成",
+    },
+    {
+      id: 2,
       name: "字体压缩工具",
-      description: "用于web前端的otf字体压缩转换为woff2字体工具，可自定义压缩字符集。",
+      description:
+        "面向 Web 前端的 OTF 字体压缩工具，可将字体转换为体积更小的 WOFF2 格式，并支持自定义压缩字符集，有效减小字体体积、提升页面加载速度。",
       url: "http://fontc.zhengsongrui.life/",
       github: "https://github.com/zhengsongrui/font-compression",
       writeStatus: "已完成",
     },
     {
-      id: 2,
+      id: 3,
       name: "芋道react前端",
-      description: "自主开发自用的AI工程化芋道react前端框架，已对接大部分系统管理接口，需要搭配芋道后端使用。",
+      description:
+        "自研的 AI 工程化芋道 React 前端框架，已对接大部分系统管理接口，需搭配芋道后端服务使用。",
       github: "https://github.com/zhengsongrui/yudao-react",
       writeStatus: "已完成",
     },
 
     {
-      id: 3,
-      name: "live2d智能虚拟助手",
-      description: "使用kotlin开发，基于Live2D的虚拟助手，后端采用noedjs，接入了语音识别、语音合成、在线/本地AI模型。",
-      github: "https://github.com/zhengsongrui/live2dAssistant",
-      writeStatus: "开发中",
-    },
-    {
       id: 4,
-      name: "远程开机助手",
-      description: "用于远程开启电脑的工具，服务端基于nodejs开发，app端使用kotlin开发，仅支持PCIE网络唤醒的主板。",
-      // url: "http://zhengsongrui.life/frp/font-compression",
-      github: "https://github.com/zhengsongrui/wakeComputer",
+      name: "AI阅读器v1",
+      description:
+        "基于 UniApp X 开发的安卓阅读器，已接入 F5-TTS 实现克隆音色的有声阅读功能；后续计划加入 AI 文本分析，自动切换角色与旁白音色。",
+      github: "https://github.com/zhengsongrui/NovelReader",
       writeStatus: "已完成",
     },
     {
       id: 5,
+      name: "f5-tts文字转语音",
+      description:
+        "基于 FastAPI 封装的文字转语音（TTS）后端服务，提供规范的 HTTP 接口。",
+      url: "http://f5tts.zhengsongrui.life/",
+      github: "https://github.com/zhengsongrui/f5-tts-server",
+      writeStatus: "已完成",
+    },
+    {
+      id: 6,
+      name: "远程开机助手",
+      description:
+        "远程开机工具，服务端基于 Node.js、App 端基于 Kotlin 开发，支持对具备 PCIe 网络唤醒（Wake-on-LAN）功能的主板进行远程开机。",
+      github: "https://github.com/zhengsongrui/wakeComputer",
+      writeStatus: "已完成",
+    },
+    {
+      id: 7,
+      name: "live2d语音助手前端",
+      description:
+        "基于 Kotlin 开发的前端语音助手，集成 Live2D 虚拟形象，用于对接 AI 语音 Agent 后端。",
+      github:
+        "https://github.com/zhengsongrui/live2dAssistant/tree/main/live2dOfficial",
+      writeStatus: "开发中",
+    },
+    {
+      id: 8,
       name: "个人博客v2",
       description:
-        "用于测试AI全自动开发上限的demo博客，由开发者提需求，AI主导开发流程。",
+        "用于探索 AI 全自动开发能力上限的 Demo 博客，由开发者提出需求，AI 主导完成开发流程。",
       url: "http://zhengsongrui.life/frp/blog-v2",
       github: "https://github.com/zhengsongrui/blog-ts-v2",
       writeStatus: "维护中",
     },
-
     {
-      id: 6,
+      id: 9,
       name: "AI博客",
       description:
-        "AI驱动的个人博客，有AI自动生成文章摘要，AI 搜索，AI 标签生成，AI 问答等功能。",
+        "AI 驱动的个人博客，内置 AI 自动生成文章摘要、AI 搜索、AI 标签生成、AI 问答等功能。",
       writeStatus: "未开发",
     },
   ],

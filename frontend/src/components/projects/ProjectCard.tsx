@@ -17,7 +17,7 @@ const adjustOnlineStatus = (
   if (url) {
     return online ? "在线" : "离线";
   } else {
-    return "无在线地址";
+    return "未上线";
   }
 };
 
