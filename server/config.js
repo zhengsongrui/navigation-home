@@ -30,10 +30,10 @@ module.exports = {
 
     {
       id: 4,
-      name: "AI阅读器v1",
+      name: "AI阅读器",
       description:
-        "基于 UniApp X 开发的安卓阅读器，已接入 F5-TTS 实现克隆音色的有声阅读功能；后续计划加入 AI 文本分析，自动切换角色与旁白音色。",
-      github: "https://github.com/zhengsongrui/NovelReader",
+        "基于 UniApp X 开发的安卓阅读器，已接入 index-TTS 实现克隆音色的有声阅读功能；后续计划加入 AI 文本分析，自动切换角色与旁白音色。",
+      github: "hhttps://github.com/zhengsongrui/TTS-Reader",
       writeStatus: "已完成",
     },
     {
